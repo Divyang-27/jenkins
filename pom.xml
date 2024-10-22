@@ -3,7 +3,8 @@
   <groupId>Reporrts</groupId>
   <artifactId>Reporrts</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-   <build>
+
+  <build>
     <plugins>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
@@ -15,61 +16,68 @@
           </includes>
         </configuration>
       </plugin>
-       <plugin>
+      <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
         <version>3.8.1</version>
         <configuration>
           <source>1.8</source>
           <target>1.8</target>
+          <encoding>UTF-8</encoding>
         </configuration>
       </plugin>
     </plugins>
   </build>
+
   <dependencies>
- <dependency>
-    <groupId>org.seleniumhq.selenium</groupId>
-    <artifactId>selenium-java</artifactId>
-    <version>3.141.59</version>
-</dependency>
-<dependency>
-    <groupId>io.github.bonigarcia</groupId>
-    <artifactId>webdrivermanager</artifactId>
-    <version>5.5.3</version>
-</dependency>
-<dependency>
-    <groupId>org.testng</groupId>
-    <artifactId>testng</artifactId>
-    <version>7.3.0</version>
-    <scope>test</scope>
-</dependency>
-<dependency>
-  <groupId>com.aventstack</groupId>
-  <artifactId>extentreports</artifactId>
-  <version>3.1.5</version>
-  </dependency>
-  <dependency>
-  <groupId>org.apache.poi</groupId>
-  <artifactId>poi</artifactId>
-  <version>5.2.2</version>
-</dependency>
-  	<dependency>
-    <groupId>javax.mail</groupId>
-    <artifactId>mail</artifactId>
-    <version>1.4</version>
-  </dependency>
-  <!-- https://mvnrepository.com/artifact/net.sourceforge.jexcelapi/jxl -->
-<dependency>
-  <groupId>net.sourceforge.jexcelapi</groupId>
-  <artifactId>jxl</artifactId>
-  <version>2.6.12</version>
-</dependency>
-  <!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
-  <!-- https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml -->
-<dependency>
-  <groupId>org.apache.poi</groupId>
-  <artifactId>poi-ooxml</artifactId>
-  <version>5.2.2</version>
-</dependency>
+    <!-- Selenium WebDriver -->
+    <dependency>
+      <groupId>org.seleniumhq.selenium</groupId>
+      <artifactId>selenium-java</artifactId>
+      <version>3.141.59</version>
+    </dependency>
+
+    <!-- WebDriver Manager -->
+    <dependency>
+      <groupId>io.github.bonigarcia</groupId>
+      <artifactId>webdrivermanager</artifactId>
+      <version>5.5.3</version>
+    </dependency>
+
+    <!-- TestNG for testing framework -->
+    <dependency>
+      <groupId>org.testng</groupId>
+      <artifactId>testng</artifactId>
+      <version>7.3.0</version>
+      <scope>test</scope>
+    </dependency>
+
+    <!-- ExtentReports for reporting -->
+    <dependency>
+      <groupId>com.aventstack</groupId>
+      <artifactId>extentreports</artifactId>
+      <version>3.1.5</version>
+    </dependency>
+
+    <!-- Apache POI for Excel operations -->
+    <dependency>
+      <groupId>org.apache.poi</groupId>
+      <artifactId>poi-ooxml</artifactId>
+      <version>5.2.2</version>
+    </dependency>
+
+    <!-- Java Mail API for sending emails -->
+    <dependency>
+      <groupId>javax.mail</groupId>
+      <artifactId>mail</artifactId>
+      <version>1.4</version>
+    </dependency>
+
+    <!-- JExcel API for Excel operations -->
+    <dependency>
+      <groupId>net.sourceforge.jexcelapi</groupId>
+      <artifactId>jxl</artifactId>
+      <version>2.6.12</version>
+    </dependency>
   </dependencies>
 </project>
